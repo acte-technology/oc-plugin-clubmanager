@@ -1,0 +1,54 @@
+columns:
+  date:
+    label: acte.clubmanager::lang.backend.date
+    type: date
+  weight:
+    label: acte.clubmanager::lang.backend.weight
+    type: number
+  neck:
+    label: acte.clubmanager::lang.backend.neck
+    type: number
+  bust:
+    label: acte.clubmanager::lang.backend.bust
+    type: number
+  waist:
+    label: acte.clubmanager::lang.backend.waist
+    type: number
+  hips:
+    label: acte.clubmanager::lang.backend.hips
+    type: number
+  # biceps_l:
+  #   label: acte.clubmanager::lang.backend.biceps_l
+  #   span: left
+  #   type: number
+  # biceps_r:
+  #   label: acte.clubmanager::lang.backend.biceps_r
+  #   span: auto
+  #   type: number
+  #
+  # thights_high_l:
+  #   label: acte.clubmanager::lang.backend.thights_high_l
+  #   type: number
+  # thights_high_r:
+  #   label: acte.clubmanager::lang.backend.thights_high_r
+  #   type: number
+  # thights_l:
+  #   label: acte.clubmanager::lang.backend.thights_l
+  #   type: number
+  # thights_r:
+  #   label: acte.clubmanager::lang.backend.thights_r
+  #   type: number
+  #
+  #
+  # knee_l:
+  #   label: acte.clubmanager::lang.backend.knee_l
+  #   type: number
+  # knee_r:
+  #   label: acte.clubmanager::lang.backend.knee_r
+  #   type: number
+  # calf_l:
+  #   label: acte.clubmanager::lang.backend.calf_l
+  #   type: number
+  # calf_r:
+  #   label: acte.clubmanager::lang.backend.calf_r
+  #   type: number

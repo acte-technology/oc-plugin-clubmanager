@@ -1,0 +1,10 @@
+fields:
+    name:
+        label: acte.clubmanager::lang.backend.name
+        span: auto
+        type: text
+    description:
+        label: acte.clubmanager::lang.backend.description
+        span: full
+        size: large
+        type: textarea

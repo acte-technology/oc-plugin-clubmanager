@@ -1,0 +1,6 @@
+scopes:
+  is_paid:
+    label: acte.clubmanager::lang.backend.hide_paid
+    type: checkbox
+    default: 1
+    conditions: is_paid <> true

@@ -1,0 +1,37 @@
+fields:
+  # member:
+  #   label: acte.clubmanager::lang.backend.member
+  #   span: auto
+  #   type: relation
+  #   nameFrom: name
+
+  # session:
+  #   label: acte.clubmanager::lang.backend.session
+  #   span: auto
+  #   type: relation
+  #   nameFrom: name
+  #   emptyOption: -- optional related session --
+
+  date:
+    label: acte.clubmanager::lang.backend.date
+    span: auto
+    type: datepicker
+    mode: date
+
+  thematic:
+    label: acte.clubmanager::lang.backend.thematic
+    span: auto
+    type: relation
+    select: name
+
+  value:
+    label: acte.clubmanager::lang.backend.value
+    type: number
+    span: left
+
+  thematic[unit]:
+    label: Unit
+    type: text
+    span: right
+    dependsOn: thematic
+    disabled: true

@@ -1,0 +1,46 @@
+ticket:
+  label: Ticket
+  view:
+    list: $/acte/clubmanager/models/ticket/columns_relation.yaml
+    toolbarButtons: create|delete
+    defaultSort: 'start_date'
+  manage:
+    form: $/acte/clubmanager/models/ticket/fields_relation.yaml
+
+session:
+  label: session
+  readOnly: true
+  view:
+    list: $/acte/clubmanager/models/session/columns_relation.yaml
+    toolbarButtons: none
+    scope: isCompleted
+    recordUrl: acte/clubmanager/sessions/preview/:id
+
+performances:
+  label: acte.clubmanager::lang.backend.performances
+  view:
+    list: $/acte/clubmanager/models/performance/columns.yaml
+    toolbarButtons: create|delete
+    showCheckboxes: true
+  manage:
+    form: $/acte/clubmanager/models/performance/fields.yaml
+    list: $/acte/clubmanager/models/performance/columns.yaml
+
+goals:
+  label: goals
+  view:
+    list: $/acte/clubmanager/models/goal/columns.yaml
+    toolbarButtons: create|delete
+  manage:
+    form: $/acte/clubmanager/models/goal/fields.yaml
+    list: $/acte/clubmanager/models/goal/columns.yaml
+
+bodyrecords:
+  label: acte.clubmanager::lang.backend.bodyrecords
+  view:
+    list: $/acte/clubmanager/models/bodyrecord/columns.yaml
+    toolbarButtons: create|delete
+    showCheckboxes: true
+  manage:
+    form: $/acte/clubmanager/models/bodyrecord/fields.yaml
+    list: $/acte/clubmanager/models/bodyrecord/columns.yaml

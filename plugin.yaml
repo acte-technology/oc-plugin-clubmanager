@@ -1,0 +1,57 @@
+plugin:
+    name: 'acte.clubmanager::lang.plugin.name'
+    description: 'acte.clubmanager::lang.plugin.description'
+    author: 'ACTE Solutions'
+    icon: oc-icon-users
+    homepage: 'https://acte-solutions.com'
+permissions:
+    acte.clubmanager.manage_club:
+        tab: 'acte.clubmanager::lang.plugin.name'
+        label: 'acte.clubmanager::lang.plugin.name'
+    acte.clubmanager.manage_settings:
+        tab: 'acte.clubmanager::lang.plugin.name'
+        label: 'acte.clubmanager::lang.backend.settings.title'
+navigation:
+    clubmanager:
+        label: 'Club Manager'
+        url: acte/clubmanager/sessions
+        icon: icon-users
+        permissions:
+            - acte.clubmanager.manage_club
+        sideMenu:
+            members:
+                label: 'acte.clubmanager::lang.backend.members'
+                url: acte/clubmanager/members
+                icon: icon-users
+                permissions:
+                    - acte.clubmanager.manage_club
+            sessions:
+                label: 'acte.clubmanager::lang.backend.sessions'
+                url: acte/clubmanager/sessions
+                icon: icon-calendar
+                permissions:
+                    - acte.clubmanager.manage_club
+            tickets:
+                label: 'acte.clubmanager::lang.backend.tickets'
+                url: acte/clubmanager/tickets
+                icon: icon-ticket
+                permissions:
+                    - acte.clubmanager.manage_club
+            membershiptypes:
+                label: 'acte.clubmanager::lang.backend.membershiptypes'
+                url: acte/clubmanager/membershiptypes
+                icon: icon-address-card-o
+                permissions:
+                    - acte.clubmanager.manage_club
+            categories:
+                label: 'acte.clubmanager::lang.backend.categories'
+                url: acte/clubmanager/categories
+                icon: icon-sitemap
+                permissions:
+                    - acte.clubmanager.manage_club
+            thematics:
+                label: 'acte.clubmanager::lang.backend.thematics'
+                url: acte/clubmanager/thematics
+                icon: icon-copy
+                permissions:
+                    - acte.clubmanager.manage_thematics

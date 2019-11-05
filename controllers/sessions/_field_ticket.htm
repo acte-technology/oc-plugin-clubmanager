@@ -1,0 +1,13 @@
+<div id="ticketList">
+    <?= $this->makePartial('ticket_list', ['tickets' => $model->ticket])?>
+</div>
+<p>
+    <a
+        href="javascript:;"
+        class="btn btn-secondary oc-icon-plus"
+        data-control="popup"
+        data-handler="onLoadCreateTicketForm"
+        data-size="large">
+        Add ticket
+    </a>
+</p>

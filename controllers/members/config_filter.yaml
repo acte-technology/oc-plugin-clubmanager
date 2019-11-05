@@ -1,0 +1,6 @@
+scopes:
+  is_active:
+    label: acte.clubmanager::lang.backend.hide_inactive
+    type: checkbox
+    default: 1
+    conditions: is_active <> false

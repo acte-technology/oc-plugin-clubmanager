@@ -1,0 +1,40 @@
+fields:
+  is_active:
+    label: acte.clubmanager::lang.backend.is_active
+    span: full
+    type: switch
+    default: true
+  name:
+    label: acte.clubmanager::lang.backend.name
+    span: auto
+    type: text
+  ref:
+    label: acte.clubmanager::lang.backend.ref
+    span: auto
+    type: text
+    preset:
+      field: name
+      type: slug
+  model:
+    label: acte.clubmanager::lang.backend.model
+    span: auto
+    type: dropdown
+    options:
+      session: 'acte.clubmanager::lang.backend.session_based'
+      time: 'acte.clubmanager::lang.backend.time_based'
+  session_count:
+    label: acte.clubmanager::lang.backend.session_count
+    span: auto
+    type: number
+    trigger:
+      action: show
+      field: model
+      condition: value[session]
+  validity:
+    label: acte.clubmanager::lang.backend.validity
+    span: auto
+    type: dropdown
+  price:
+    label: acte.clubmanager::lang.backend.price
+    span: auto
+    type: number

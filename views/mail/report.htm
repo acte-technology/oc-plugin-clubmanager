@@ -1,0 +1,24 @@
+subject = "Report"
+description = "Regular report"
+==
+Hello,
+
+See status of all your active members without session left:
+
+<table>
+
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Session left</th>
+  </tr>
+
+  {% for member in members %}
+  <tr>
+    <td>{{ member.first_name }}</td>
+    <td>{{ member.last_name }}</td>
+    <td>{{ member.session_left }}</td>
+  </tr>
+  {% endfor %}
+
+</table>

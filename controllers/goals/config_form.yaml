@@ -1,0 +1,10 @@
+name: Goals
+form: $/acte/clubmanager/models/goal/fields.yaml
+modelClass: Acte\ClubManager\Models\Goal
+defaultRedirect: acte/clubmanager/goals
+create:
+    redirect: 'acte/clubmanager/goals/update/:id'
+    redirectClose: acte/clubmanager/goals
+update:
+    redirect: acte/clubmanager/goals
+    redirectClose: acte/clubmanager/goals

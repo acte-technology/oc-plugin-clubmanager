@@ -1,0 +1,52 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table acte_clubmanager_categories'
+    - builder_table_create_acte_clubmanager_categories.php
+1.0.3:
+    - 'Created table acte_clubmanager_members'
+    - builder_table_create_acte_clubmanager_members.php
+1.0.4:
+    - 'Created table acte_clubmanager_sessions'
+    - builder_table_create_acte_clubmanager_sessions.php
+1.0.5:
+    - 'Created table acte_clubmanager_category_member'
+    - create_table_acte_clubmanager_category_member.php
+1.0.6:
+    - 'Created table acte_clubmanager_member_session'
+    - create_table_acte_clubmanager_member_session.php
+1.0.7:
+    - 'Created table acte_clubmanager_tickets'
+    - builder_table_create_acte_clubmanager_tickets.php
+1.0.8:
+    - 'Created table acte_clubmanager_membershiptypes'
+    - builder_table_create_acte_clubmanager_membershiptypes.php
+1.0.9:
+    - 'Updated table acte_clubmanager_tickets'
+    - update_table_acte_clubmanager_tickets.php
+1.0.10:
+    - 'Updated table acte_clubmanager_members'
+    - update_table_acte_clubmanager_members.php
+1.0.11:
+    - 'Added session completed notification (beta test)'
+1.0.12:
+    - 'Created table acte_clubmanager_bodyrecords'
+    - create_table_acte_clubmanager_bodyrecords.php
+1.0.13:
+    - 'Created table acte_clubmanager_thematics'
+    - create_table_acte_clubmanager_thematics.php
+1.0.14:
+    - 'Created table acte_clubmanager_goals'
+    - builder_table_create_acte_clubmanager_goals.php
+1.0.16:
+    - 'Created table acte_clubmanager_perfs'
+    - builder_table_create_acte_clubmanager_perfs.php
+1.0.17:
+    - 'Updated table acte_clubmanager_perfs'
+    - builder_table_update_acte_clubmanager_perfs.php
+1.0.18:
+    - 'Updated table acte_clubmanager_thematics'
+    - builder_table_update_acte_clubmanager_thematics.php
+1.0.19:
+    - 'Updated table acte_clubmanager_goals'
+    - builder_table_update_acte_clubmanager_goals.php

@@ -1,0 +1,26 @@
+columns:
+  id:
+    label: id
+    type: number
+    invisible: true
+  first_name:
+    label: acte.clubmanager::lang.backend.first_name
+    type: text
+    searchable: true
+  last_name:
+    label: acte.clubmanager::lang.backend.last_name
+    type: text
+    searchable: true
+  category:
+    label: acte.clubmanager::lang.backend.category
+    relation: category
+    select: name
+  session_left:
+    label: acte.clubmanager::lang.backend.session_left
+    type: partial
+    path: field_session_left
+    sortable: true
+  all_time_session:
+    label: acte.clubmanager::lang.backend.all_time_session
+    type: number
+    sortable: false

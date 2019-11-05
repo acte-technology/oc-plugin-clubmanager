@@ -1,0 +1,19 @@
+columns:
+    thematic[name]:
+        label: thematic name
+        type: text
+    comparaison:
+        label: comparaison
+        type: text
+    value:
+        label: value
+        type: text
+    thematic[unit]:
+        label: unit
+        type: text
+    # start_date:
+    #     label: start_date
+    #     type: text
+    deadline_date:
+        label: deadline_date
+        type: text

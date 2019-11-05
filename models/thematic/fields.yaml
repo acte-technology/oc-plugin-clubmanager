@@ -1,0 +1,23 @@
+fields:
+  parent_id:
+    label: acte.clubmanager::lang.backend.parent
+    coment: acte.clubmanager::lang.backend.parent_comment
+    span: left
+    type: dropdown
+  name:
+    label: acte.clubmanager::lang.backend.name
+    span: left
+    type: text
+  unit:
+    label: Performance Unit
+    comment: 'seconds for 100m sprint, kg for weight lifting...'
+    span: left
+    type: dropdown
+    options:
+      unit: unit
+      seconds: seconds
+      minutes: minutes
+      times: units
+      kg: kg
+      cm: centimeters
+      m: meters

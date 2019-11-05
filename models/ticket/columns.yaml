@@ -1,0 +1,27 @@
+columns:
+  member:
+    label: acte.clubmanager::lang.backend.member
+    relation: member
+    select: concat(first_name, ' ', last_name)
+  is_paid:
+    label: acte.clubmanager::lang.backend.is_paid
+    type: switch
+  amount:
+    label: acte.clubmanager::lang.backend.amount
+    type: number
+  discount:
+    label: acte.clubmanager::lang.backend.discount
+    type: number      
+  start_date:
+    label: acte.clubmanager::lang.backend.start_date
+    type: date
+  expire_date:
+    label: acte.clubmanager::lang.backend.expire_date
+    type: date
+  validity_extend:
+    label: acte.clubmanager::lang.backend.validity_extend
+    type: text
+  membershiptype:
+    label: acte.clubmanager::lang.backend.membershiptype
+    relation: membershiptype
+    select: name

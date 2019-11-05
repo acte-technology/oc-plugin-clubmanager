@@ -1,0 +1,10 @@
+name: Thematics
+form: $/acte/clubmanager/models/thematic/fields.yaml
+modelClass: Acte\ClubManager\Models\Thematic
+defaultRedirect: acte/clubmanager/thematics
+create:
+    redirect: 'acte/clubmanager/thematics/update/:id'
+    redirectClose: acte/clubmanager/thematics
+update:
+    redirect: acte/clubmanager/thematics
+    redirectClose: acte/clubmanager/thematics

@@ -1,0 +1,10 @@
+name: Performances
+form: $/acte/clubmanager/models/performance/fields.yaml
+modelClass: Acte\ClubManager\Models\Performance
+defaultRedirect: acte/clubmanager/performances
+create:
+    redirect: 'acte/clubmanager/performances/update/:id'
+    redirectClose: acte/clubmanager/performances
+update:
+    redirect: acte/clubmanager/performances
+    redirectClose: acte/clubmanager/performances

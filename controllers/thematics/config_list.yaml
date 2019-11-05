@@ -1,0 +1,14 @@
+list: $/acte/clubmanager/models/thematic/columns.yaml
+modelClass: Acte\ClubManager\Models\Thematic
+title: Thematics
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: false
+showCheckboxes: true
+showTree: true
+treeExpanded: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'acte/clubmanager/thematics/update/:id'

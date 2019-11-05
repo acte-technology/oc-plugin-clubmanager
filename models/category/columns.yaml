@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: true
+    name:
+        label: acte.clubmanager::lang.backend.name
+        type: text
+    description:
+        label: acte.clubmanager::lang.backend.description
+        type: text

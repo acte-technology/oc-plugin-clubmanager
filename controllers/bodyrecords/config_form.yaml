@@ -1,0 +1,10 @@
+name: body record
+form: $/acte/clubmanager/models/bodyrecord/fields.yaml
+modelClass: Acte\ClubManager\Models\BodyRecord
+defaultRedirect: acte/clubmanager/bodyrecords
+create:
+    redirect: 'acte/clubmanager/bodyrecords/update/:id'
+    redirectClose: acte/clubmanager/bodyrecords
+update:
+    redirect: acte/clubmanager/bodyrecords
+    redirectClose: acte/clubmanager/bodyrecords

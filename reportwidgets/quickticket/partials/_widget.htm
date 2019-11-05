@@ -1,0 +1,37 @@
+<div class="report-widget">
+    <h3>Quick Ticket</h3>
+
+      <div class="form-group">
+          <select class="form-control custom-select" name="quick-ticket[member]" placeholder="select member" required>
+            <?php foreach($members as $key => $member): ?>
+            <option value="<?= $member->id ?>"><?= $member->name ?></option>
+            <?php endforeach ?>
+          </select>
+      </div>
+
+      <div class="form-group">
+          <select class="form-control custom-select" name="quick-ticket[membershiptype]" placeholder="select membership type" required>
+            <?php foreach($membershiptypes as $key => $membershiptype): ?>
+            <option value="<?= $membershiptype->id ?>"><?= $membershiptype->name ?></option>
+            <?php endforeach ?>
+          </select>
+      </div>
+
+      <div class="checkbox custom-checkbox">
+          <input name="quick-ticket[is-paid]" value="1" type="checkbox" id="is-paid" />
+          <label for="is-paid">Is Paid</label>
+      </div>
+
+      <div class="form-group">
+          <button
+            type="submit"
+            data-request="quickticket::onQuickAdd"
+            class="btn btn-primary">Create ticket
+          </button>
+          <a href="<?= Backend::url('acte/clubmanager/tickets/index') ?>">Manage your tickets</a>
+      </div>
+
+  </form>
+
+
+</div>

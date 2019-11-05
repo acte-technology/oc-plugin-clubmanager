@@ -1,0 +1,89 @@
+fields:
+  # member:
+  #   label: acte.clubmanager::lang.backend.member
+  #   span: auto
+  #   type: relation
+  #   select: first_name
+  date:
+    label: acte.clubmanager::lang.backend.date
+    span: left
+    type: datepicker
+    mode: date
+  weight:
+    label: acte.clubmanager::lang.backend.weight
+    span: right
+    type: number
+
+
+  neck:
+    label: acte.clubmanager::lang.backend.neck
+    span: storm
+    cssClass: 'col-xs-3 p-l-0'
+    type: number
+  bust:
+    label: acte.clubmanager::lang.backend.bust
+    span: storm
+    cssClass: 'col-xs-3'
+    type: number
+  waist:
+    label: acte.clubmanager::lang.backend.waist
+    span: storm
+    cssClass: 'col-xs-3'
+    type: number
+  hips:
+    label: acte.clubmanager::lang.backend.hips
+    span: storm
+    cssClass: 'col-xs-3 p-r-0'
+    type: number
+
+  biceps_l:
+    label: acte.clubmanager::lang.backend.biceps_l
+    span: left
+    type: number
+  biceps_r:
+    label: acte.clubmanager::lang.backend.biceps_r
+    span: auto
+    type: number
+
+
+  thights_high_l:
+    label: acte.clubmanager::lang.backend.thights_high_l
+    span: storm
+    cssClass: 'col-xs-3 p-l-0'
+    type: number
+  thights_high_r:
+    label: acte.clubmanager::lang.backend.thights_high_r
+    span: storm
+    cssClass: 'col-xs-3'
+    type: number
+  thights_l:
+    label: acte.clubmanager::lang.backend.thights_l
+    span: storm
+    cssClass: 'col-xs-3'
+    type: number
+  thights_r:
+    label: acte.clubmanager::lang.backend.thights_r
+    span: storm
+    cssClass: 'col-xs-3 p-r-0'
+    type: number
+
+  knee_l:
+    label: acte.clubmanager::lang.backend.knee_l
+    span: storm
+    cssClass: 'col-xs-3 p-l-0'
+    type: number
+  knee_r:
+    label: acte.clubmanager::lang.backend.knee_r
+    span: storm
+    cssClass: 'col-xs-3'
+    type: number
+  calf_l:
+    label: acte.clubmanager::lang.backend.calf_l
+    span: storm
+    cssClass: 'col-xs-3'
+    type: number
+  calf_r:
+    label: acte.clubmanager::lang.backend.calf_r
+    span: storm
+    cssClass: 'col-xs-3 p-r-0'
+    type: number

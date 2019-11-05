@@ -1,0 +1,10 @@
+name: Ticket
+form: $/acte/clubmanager/models/ticket/fields.yaml
+modelClass: Acte\ClubManager\Models\Ticket
+defaultRedirect: acte/clubmanager/tickets
+create:
+    redirect: 'acte/clubmanager/tickets/update/:id'
+    redirectClose: acte/clubmanager/tickets
+update:
+    redirect: acte/clubmanager/tickets
+    redirectClose: acte/clubmanager/tickets

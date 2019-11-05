@@ -1,0 +1,12 @@
+list: $/acte/clubmanager/models/membershiptype/columns.yaml
+modelClass: Acte\ClubManager\Models\MembershipType
+title: MembershipTypes
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'acte/clubmanager/membershiptypes/update/:id'

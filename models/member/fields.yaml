@@ -1,0 +1,76 @@
+fields:
+  is_active:
+    label: acte.clubmanager::lang.backend.is_active
+    span: full
+    type: switch
+    default: true
+tabs:
+  fields:
+    first_name:
+      label: acte.clubmanager::lang.backend.first_name
+      span: auto
+      type: text
+      tab: acte.clubmanager::lang.backend.tabs.profile
+    last_name:
+      label: acte.clubmanager::lang.backend.last_name
+      span: auto
+      type: text
+      tab: acte.clubmanager::lang.backend.tabs.profile
+    category:
+      label: acte.clubmanager::lang.backend.categories
+      span: full
+      type: relation
+      nameFrom: name
+      tab: acte.clubmanager::lang.backend.tabs.profile
+
+    email:
+      label: acte.clubmanager::lang.backend.email
+      span: auto
+      type: text
+      tab: acte.clubmanager::lang.backend.tabs.profile
+    phone:
+      label: acte.clubmanager::lang.backend.phone
+      span: auto
+      type: text
+      tab: acte.clubmanager::lang.backend.tabs.profile
+    birth_date:
+      label: acte.clubmanager::lang.backend.birth_date
+      span: auto
+      mode: date
+      type: datepicker
+      tab: acte.clubmanager::lang.backend.tabs.profile
+
+    ticket@update:
+      span: full
+      type: partial
+      path: $/acte/clubmanager/controllers/members/_field_ticket.htm
+      tab: acte.clubmanager::lang.backend.tabs.tickets
+
+    section_history:
+      span: full
+      type: section
+      label: List of sessions attempted by the member:
+      tab: acte.clubmanager::lang.backend.tabs.history
+    session@update:
+      span: full
+      type: partial
+      path: $/acte/clubmanager/controllers/members/_field_session.htm
+      tab: acte.clubmanager::lang.backend.tabs.history
+
+    bodyrecords:
+      span: full
+      type: partial
+      path: $/acte/clubmanager/controllers/members/_field_bodyrecords.htm
+      tab: acte.clubmanager::lang.backend.tabs.bodyrecords
+
+    performances:
+      span: full
+      type: partial
+      path: $/acte/clubmanager/controllers/members/_field_performances.htm
+      tab: acte.clubmanager::lang.backend.tabs.performances
+
+    goals:
+      span: full
+      type: partial
+      path: $/acte/clubmanager/controllers/members/_field_goals.htm
+      tab: acte.clubmanager::lang.backend.tabs.goals

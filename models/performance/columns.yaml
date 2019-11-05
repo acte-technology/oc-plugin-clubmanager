@@ -1,0 +1,19 @@
+columns:
+
+  date:
+    label: acte.clubmanager::lang.backend.date
+    type: date
+
+  thematic_name:
+    label: acte.clubmanager::lang.backend.thematic
+    relation: thematic
+    select: name
+
+  value:
+    label: acte.clubmanager::lang.backend.value
+    type: number
+
+  thematic_unit:
+    label: acte.clubmanager::lang.backend.unit
+    relation: thematic
+    select: unit

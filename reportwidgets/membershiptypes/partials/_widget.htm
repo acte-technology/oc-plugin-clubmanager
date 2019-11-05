@@ -1,0 +1,15 @@
+<div class="report-widget">
+    <h3><?= $this->property('title') ?> (<?= $this->property('range') ?>)</h3>
+    <div
+    class="control-chart centered wrap-legend"
+    data-control="chart-pie"
+    data-size="<?= $this->property('size') ?>"
+    data-center-text="<?= $count ?>">
+    <ul>
+        <?php foreach($records as $key => $record): ?>
+        <li><?= $record->membershiptype->name ?> <span><?= $record->count ?></span></li>
+        <?php endforeach ?>
+    </ul>
+</div>
+
+</div>

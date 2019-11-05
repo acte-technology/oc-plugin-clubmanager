@@ -1,0 +1,36 @@
+fields:
+    # start_date:
+    #     label: start_date
+    #     span: auto
+    #     mode: date
+    #     type: datepicker
+    deadline_date:
+        label: Deadline date
+        span: auto
+        mode: date
+        type: datepicker
+    thematic:
+        label: thematic
+        type: relation
+        select: name
+        emptyOption: '-- select thematic --'
+    comparaison:
+        label: comparaison
+        type: dropdown
+        span: storm
+        cssClass: col-sm-4 p-l-0
+        options:
+          less: less than
+          more: more than
+    value:
+        label: value
+        type: number
+        span: storm
+        cssClass: col-sm-4
+    thematic[unit]:
+        label: unit
+        type: text
+        span: storm
+        cssClass: col-sm-4 p-r-0
+        dependsOn: thematic
+        disabled: true

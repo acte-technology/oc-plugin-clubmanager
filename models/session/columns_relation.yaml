@@ -1,0 +1,12 @@
+columns:
+  date:
+    label: acte.clubmanager::lang.backend.date
+    type: date
+  category:
+    label: acte.clubmanager::lang.backend.category
+    relation: category
+    select: name
+  thematics:
+    label: thematics
+    relation: thematics
+    select: name

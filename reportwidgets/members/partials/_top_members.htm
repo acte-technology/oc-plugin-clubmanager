@@ -1,0 +1,15 @@
+<div class="report-widget">
+    <h3 style="color: #95b753;">Top Members (<?= $this->property('limitRecords') ?>)</h3>
+
+    <div
+        class="control-chart wrap-legend"
+        data-control="chart-bar"
+        data-height="100"
+        data-full-width="1">
+        <ul>
+          <?php foreach($records as $key => $record): ?>
+          <li><?= $record->name ?> <span><?= $record->all_time_session ?></span></li>
+          <?php endforeach ?>
+        </ul>
+    </div>
+</div>

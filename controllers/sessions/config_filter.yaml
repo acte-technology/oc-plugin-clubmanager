@@ -1,0 +1,11 @@
+scopes:
+  is_completed:
+    label: acte.clubmanager::lang.backend.hide_completed
+    type: checkbox
+    default: 1
+    conditions: is_completed <> true
+  category:
+    label: acte.clubmanager::lang.backend.category
+    modelClass: Acte\ClubManager\Models\Category
+    conditions: category_id in (:filtered)
+    nameFrom: name

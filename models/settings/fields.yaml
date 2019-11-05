@@ -1,0 +1,28 @@
+tabs:
+  fields:
+    lock_archives:
+      type: switch
+      label: acte.clubmanager::lang.backend.settings.lock_archives
+      comment: acte.clubmanager::lang.backend.settings.lock_archives_comment
+      default: true
+    validity_options:
+      type: repeater
+      label: acte.clubmanager::lang.backend.settings.validity_options
+      span: left
+      cssClass: 'p-a-0'
+      tab: acte.clubmanager::lang.backend.settings.validity_options
+      form:
+        fields:
+          number:
+            type: number
+            span: auto
+            cssClass: 'p-a-0'
+          time:
+            type: dropdown
+            span: auto
+            cssClass: 'p-a-0'
+            options:
+              days: 'day(s)'
+              weeks: 'week(s)'
+              months: 'month(s)'
+              years: 'year(s)'

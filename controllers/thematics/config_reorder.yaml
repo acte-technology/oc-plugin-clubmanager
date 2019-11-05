@@ -1,0 +1,4 @@
+title: Thematics
+modelClass: Acte\ClubManager\Models\Thematic
+toolbar:
+    buttons: reorder_toolbar

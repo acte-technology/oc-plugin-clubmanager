@@ -1,0 +1,10 @@
+name: Member
+form: $/acte/clubmanager/models/member/fields.yaml
+modelClass: Acte\ClubManager\Models\Member
+defaultRedirect: acte/clubmanager/members
+create:
+    redirect: 'acte/clubmanager/members/update/:id'
+    redirectClose: acte/clubmanager/members
+update:
+    redirect: acte/clubmanager/members
+    redirectClose: acte/clubmanager/members

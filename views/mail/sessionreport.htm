@@ -1,0 +1,34 @@
+subject = "Session report"
+description = "Session report"
+==
+Hello,
+
+You've just completed a session!
+
+<!-- SESSION DETAILS -->
+<h4>{{ session.category.name }}</h4>
+
+<p>{{ session.date|date('d/m/Y') }} {% if session.start_time %}{{ session.start_time|date('H:i') }}{% endif %}</p>
+{% if session.location %}<p>Location: {{ session.location }}</p>{% endif %}
+{% if session.description %}<p>Description: {{ session.description }}</p>{% endif %}
+
+<!-- THEMATICS -->
+{% if session.thematics %}
+<h4>Thematics</h4>
+
+<ul>
+  {% for thematic in session.thematics %}
+  <li>{{ thematic.name }}</li>
+  {% endfor %}
+</ul>
+
+{% endif %}
+
+<!-- MEMBERS -->
+<h4>Members:</h4>
+
+<ul>
+  {% for member in members %}
+    <li>{{ member.first_name }} {{ member.last_name }} ({{ member.session_left }} session left)</li>
+  {% endfor %}
+</ul>

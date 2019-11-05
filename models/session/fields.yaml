@@ -1,0 +1,77 @@
+fields:
+  hint@preview:
+    type: hint
+    path: hint_preview
+  is_completed@create:
+    label: acte.clubmanager::lang.backend.is_completed
+    type: switch
+    span: full
+  is_completed@update:
+    label: acte.clubmanager::lang.backend.is_completed
+    type: switch
+    span: full
+
+  category:
+    label: acte.clubmanager::lang.backend.category
+    span: storm
+    cssClass: col-md-4 p-l-0
+    type: relation
+    select: name
+  date:
+    label: acte.clubmanager::lang.backend.date
+    mode: date
+    span: storm
+    cssClass: col-md-4
+    type: datepicker
+  location:
+    label: acte.clubmanager::lang.backend.location
+    span: storm
+    cssClass: col-md-4 p-r-0
+    tab: acte.clubmanager::lang.backend.tabs.details
+    type: text
+tabs:
+  fields:
+
+    start_time:
+      label: acte.clubmanager::lang.backend.start_time
+      mode: time
+      span: left
+      tab: acte.clubmanager::lang.backend.tabs.details
+      type: datepicker
+    end_time:
+      label: acte.clubmanager::lang.backend.end_time
+      mode: time
+      span: auto
+      tab: acte.clubmanager::lang.backend.tabs.details
+      type: datepicker
+
+    comment:
+      label: acte.clubmanager::lang.backend.comment
+      span: full
+      tab: acte.clubmanager::lang.backend.tabs.details
+      type: textarea
+      size: huge
+
+    thematics:
+      label: acte.clubmanager::lang.backend.thematics
+      tab: acte.clubmanager::lang.backend.tabs.thematics
+      type: partial
+      path: field_thematics
+
+    member@create:
+      label: acte.clubmanager::lang.backend.members
+      tab: acte.clubmanager::lang.backend.tabs.members
+      type: partial
+      path: field_member
+      scope: isActive
+    member@update:
+      label: acte.clubmanager::lang.backend.members
+      tab: acte.clubmanager::lang.backend.tabs.members
+      type: partial
+      path: field_member
+      scope: isActive
+    member@preview:
+      label: acte.clubmanager::lang.backend.members
+      tab: acte.clubmanager::lang.backend.tabs.members
+      type: relation
+      select: concat(first_name, ' ', last_name)

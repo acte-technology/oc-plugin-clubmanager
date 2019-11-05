@@ -1,0 +1,10 @@
+name: MembershipTypes
+form: $/acte/clubmanager/models/membershiptype/fields.yaml
+modelClass: Acte\ClubManager\Models\MembershipType
+defaultRedirect: acte/clubmanager/membershiptypes
+create:
+    redirect: 'acte/clubmanager/membershiptypes/update/:id'
+    redirectClose: acte/clubmanager/membershiptypes
+update:
+    redirect: acte/clubmanager/membershiptypes
+    redirectClose: acte/clubmanager/membershiptypes

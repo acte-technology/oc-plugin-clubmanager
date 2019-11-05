@@ -1,0 +1,10 @@
+name: Session
+form: $/acte/clubmanager/models/session/fields.yaml
+modelClass: Acte\ClubManager\Models\Session
+defaultRedirect: acte/clubmanager/sessions
+create:
+    redirect: 'acte/clubmanager/sessions/update/:id'
+    redirectClose: acte/clubmanager/sessions
+update:
+    redirect: acte/clubmanager/sessions
+    redirectClose: acte/clubmanager/sessions

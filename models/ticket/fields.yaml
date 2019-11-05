@@ -1,0 +1,38 @@
+fields:
+  hint@preview:
+    type: hint
+    path: hint_preview
+  member:
+    label: acte.clubmanager::lang.backend.member
+    span: left
+    type: relation
+    select: concat(first_name, ' ', last_name)
+    scope: isActive
+  membershiptype:
+    label: acte.clubmanager::lang.backend.membershiptype
+    span: left
+    type: relation
+    nameFrom: name
+    scope: isActive
+  start_date:
+    label: acte.clubmanager::lang.backend.start_on
+    span: left
+    type: datepicker
+    mode: date
+  discount:
+    label: acte.clubmanager::lang.backend.discount
+    span: right
+    type: number    
+  is_paid:
+    label: acte.clubmanager::lang.backend.is_paid
+    span: left
+    type: checkbox
+  paid_on:
+    label: acte.clubmanager::lang.backend.paid_on
+    span: left
+    type: datepicker
+    mode: date
+    trigger:
+      action: show
+      field: is_paid
+      condition: checked

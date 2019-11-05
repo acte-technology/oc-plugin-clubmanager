@@ -1,0 +1,46 @@
+fields:
+  is_active:
+    label: acte.clubmanager::lang.backend.is_active
+    span: full
+    type: switch
+    default: true
+tabs:
+  fields:
+    first_name:
+      label: acte.clubmanager::lang.backend.first_name
+      span: auto
+      type: text
+      tab: acte.clubmanager::lang.backend.tabs.profile
+    last_name:
+      label: acte.clubmanager::lang.backend.last_name
+      span: auto
+      type: text
+      tab: acte.clubmanager::lang.backend.tabs.profile
+    category:
+      label: acte.clubmanager::lang.backend.categories
+      span: full
+      type: relation
+      nameFrom: name
+      tab: acte.clubmanager::lang.backend.tabs.profile
+
+    email:
+      label: acte.clubmanager::lang.backend.email
+      span: auto
+      type: text
+      tab: acte.clubmanager::lang.backend.tabs.profile
+    phone:
+      label: acte.clubmanager::lang.backend.phone
+      span: auto
+      type: text
+      tab: acte.clubmanager::lang.backend.tabs.profile
+    birth_date:
+      label: acte.clubmanager::lang.backend.birth_date
+      span: auto
+      mode: date
+      type: datepicker
+      tab: acte.clubmanager::lang.backend.tabs.profile
+
+    ticket:
+      type: partial
+      path: field_ticket
+      tab: acte.clubmanager::lang.backend.tabs.tickets

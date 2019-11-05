@@ -1,0 +1,33 @@
+fields:
+  category:
+    label: acte.clubmanager::lang.backend.category
+    span: auto
+    type: relation
+    select: name
+  date:
+    label: acte.clubmanager::lang.backend.date
+    mode: date
+    span: left
+    type: datepicker
+  # start_time:
+  #   label: acte.clubmanager::lang.backend.start_time
+  #   mode: time
+  #   span: left
+  #   type: datepicker
+  # end_time:
+  #   label: acte.clubmanager::lang.backend.end_time
+  #   mode: time
+  #   span: auto
+  #   type: datepicker
+  location:
+    label: acte.clubmanager::lang.backend.location
+    span: full
+    type: text
+  # comment:
+  #   label: acte.clubmanager::lang.backend.comment
+  #   span: full
+  #   type: text
+  member:
+    label: acte.clubmanager::lang.backend.members
+    type: relation
+    select: first_name

@@ -1,0 +1,10 @@
+name: Category
+form: $/acte/clubmanager/models/category/fields.yaml
+modelClass: Acte\ClubManager\Models\Category
+defaultRedirect: acte/clubmanager/categories
+create:
+    redirect: 'acte/clubmanager/categories/update/:id'
+    redirectClose: acte/clubmanager/categories
+update:
+    redirect: acte/clubmanager/categories
+    redirectClose: acte/clubmanager/categories

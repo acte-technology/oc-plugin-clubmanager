@@ -1,0 +1,24 @@
+columns:
+  id:
+    label: id
+    type: number
+    invisible: true
+  name:
+    label: name
+    type: text
+  ref:
+    label: ref
+    type: text
+    invisible: true
+  model:
+    label: model
+    type: text
+  price:
+    label: price
+    type: number
+  validity:
+    label: validity
+    type: text     
+  session_count:
+    label: session_count
+    type: number

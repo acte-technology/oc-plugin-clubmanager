@@ -1,0 +1,23 @@
+member:
+  label: Member
+  view:
+    list: $/acte/clubmanager/models/member/columns_relation.yaml
+    toolbarButtons: create|add|remove
+    #recordUrl: acte/clubmanager/members/update/:id
+  manage:
+    form: $/acte/clubmanager/models/member/fields_relation.yaml
+    list: $/acte/clubmanager/models/member/columns_relation.yaml
+    showSearch: false
+    recordsPerPage: 50
+    scope: isActive
+
+thematics:
+  label: acte.clubmanager::lang.backend.thematics
+  view:
+    list: $/acte/clubmanager/models/thematic/columns_relation.yaml
+    toolbarButtons: add|remove
+    showCheckboxes: true
+  manage:
+    list: $/acte/clubmanager/models/thematic/columns_relation.yaml
+    showSearch: true
+    scope: childsOnly

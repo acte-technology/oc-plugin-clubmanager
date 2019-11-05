@@ -1,0 +1,8 @@
+list: $/acte/clubmanager/models/bodyrecord/columns.yaml
+modelClass: Acte\ClubManager\Models\BodyRecord
+title: BodyRecord
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+recordUrl: 'acte/clubmanager/bodyrecords/update/:id'

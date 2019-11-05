@@ -1,0 +1,27 @@
+<?php if($value === 'unlimited'): ?>
+    <span class="list-badge badge-success">
+      <i class="icon-check"></i>
+    </span>
+    unlimited
+<?php endif ?>
+
+<?php if($value === 0): ?>
+    <span class="list-badge badge-danger">
+      <i class="icon-times"></i>
+    </span>
+    <?= $value ?>
+<?php endif ?>
+
+<?php if($value === 1): ?>
+  <span class="list-badge badge-warning">
+    <i class="icon-exclamation"></i>
+  </span>
+  <?= $value ?>
+<?php endif ?>
+
+<?php if($value > 1): ?>
+  <span class="list-badge badge-success">
+    <i class="icon-check"></i>
+  </span>
+  <?= $value ?>
+<?php endif ?>

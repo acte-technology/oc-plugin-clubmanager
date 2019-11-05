@@ -1,0 +1,34 @@
+columns:
+  id:
+    label: id
+    type: number
+    invisible: true
+  is_completed:
+    label: acte.clubmanager::lang.backend.is_completed
+    type: switch
+    width: 100px
+    sortable: false
+  category:
+    label: acte.clubmanager::lang.backend.category
+    relation: category
+    select: name
+    sortable: false
+  date:
+    label: acte.clubmanager::lang.backend.date
+    type: date
+  location:
+    label: acte.clubmanager::lang.backend.location
+    type: text
+    invisible: true
+  start_time:
+    label: acte.clubmanager::lang.backend.start_time
+    type: time
+    invisible: true
+  end_time:
+    label: acte.clubmanager::lang.backend.end_time
+    type: time
+    invisible: true
+  participants:
+    label: acte.clubmanager::lang.backend.participants
+    type: number
+    sortable: false
